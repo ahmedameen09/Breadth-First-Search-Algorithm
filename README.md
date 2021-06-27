@@ -7,30 +7,11 @@ the BFS is an algorithmic method from the searching algorithms
 computers can't understand the graphical algorithms and it's shape without computer vision
 so all we do in this project is converting the drawn graph to some points used in a dictionary
 
-points_p = { 
-	"A" : [ "B" ],
-	"B" : [ "C" , "A" ],
-	"C" : [ "D" , "B" ],
-	"D" : [ "E" , "F" , "C" ],
-	"E" : [ "F" , "G" , "D" ],
-	"F" : [ "H" , "E" , "D" ],
-	"G" : [ "E" ],
-	"H" : [ "F" ]
-} # points we have in algorithm contain it's adjacent points (Positive direction)
+points_p  # points we have in algorithm contain it's adjacent points (Positive direction)
 		
-points_n = { 
-	"A" : [ "B" ],
-	"B" : [ "A" , "C" ],
-	"C" : [ "B" , "D" ],
-	"D" : [ "C" , "F" , "E" ],
-	"E" : [ "D" , "G" , "F" ],
-	"F" : [ "D" , "E" , "H" ],
-	"G" : [ "E" ],
-	"H" : [ "F" ]
-} # points we have in algorithm contain it's adjacent points (Negative direction)
+points_n  # points we have in algorithm contain it's adjacent points (Negative direction)
 
-any algorithm start searching from the left points to the right so we must consider that points - 
-from the end of graph has left position diffrent from the start of the graph
+any algorithm start searching from the left points to the right so we must consider that points from the end of graph has left position diffrent from the start of the graph
 so we considered that we have 2 directions +ve and -ve direction
 
 #######################################################################################################
